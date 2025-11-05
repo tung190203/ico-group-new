@@ -1,0 +1,640 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* --- CSS TÙY CHỈNH ĐỂ ĐẠT ĐỘ GIỐNG 100% --- */
+:root {
+  --ico-yellow: #ffc300;
+  --ico-yellow-secondary: #ffc30066;
+  --ico-dark: #000000;
+  /* Nền chính: Đen tuyệt đối */
+  --ico-box-dark: #121212;
+  /* Nền của các box thông tin, tối hơn một chút */
+  --ico-text: #ffffff;
+  --ico-gray: #a0aa9f;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Cho hiệu ứng cuộn mượt */
+}
+
+body {
+  background-color: var(--ico-dark);
+  color: var(--ico-text);
+  overflow-x: hidden;
+  line-height: 1.6;
+  position: relative;
+  /* Cần cho Scrollspy */
+}
+
+.container-xxl {
+  max-width: 76rem;
+}
+
+/* --- Utility Classes --- */
+.text-yellow {
+  color: var(--ico-yellow) !important;
+}
+
+.bg-yellow {
+  background-color: var(--ico-yellow) !important;
+}
+
+.section-padding {
+  padding: 80px 0;
+  border-bottom: 0.5px solid #ffc30033;
+}
+
+.section-padding:first-child {
+  border-bottom: none;
+}
+
+/* --- Navbar --- */
+.navbar {
+  background-color: var(--ico-dark);
+  z-index: 1030;
+  border-bottom: 1px solid var(--ico-yellow-secondary);
+  /* Đảm bảo navbar luôn trên cùng */
+}
+
+.navbar-brand .text-secondary {
+  font-size: 0.8rem;
+  color: var(--ico-gray) !important;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-link {
+  color: var(--ico-text) !important;
+  font-weight: 500;
+  margin-right: 1.2rem;
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.nav-link:hover {
+  color: var(--ico-yellow) !important;
+}
+
+.btn-yellow-nav {
+  background-color: var(--ico-yellow) !important;
+  color: var(--ico-dark) !important;
+  font-weight: 500 !important;
+  padding: 0.625rem 1.25rem !important;
+  border-radius: 9999px;
+  border: none;
+  transition: transform 0.1s ease-in-out;
+}
+
+.btn-yellow-nav:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* --- Common Headings/Dots --- */
+.section-dot-title {
+  color: var(--ico-yellow);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--ico-yellow-secondary);
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 8px 16px;
+  letter-spacing: 0.1em;
+}
+
+.section-title-manual {
+  color: var(--ico-yellow);
+  font-size: 0.875rem;
+  letter-spacing: 0.4em;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.section-title-news {
+  color: var(--ico-yellow);
+  letter-spacing: 0.35em;
+  font-size: 0.75rem !important;
+}
+
+/* --- Hero Section (TRANG CHỦ) --- */
+#trang-chu {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.hero-title {
+  margin-top: 20px;
+  font-size: 3.7rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  background: linear-gradient(90deg, var(--ico-yellow), #ffd84d, #fff3b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+  /* max-width: 550px; */
+  font-size: 1.125rem !important;
+  color: #ffffffcc;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-boxes-area {
+  background-color: var(--ico-dark);
+  padding: 1.5rem 2rem !important;
+  border-radius: 1.5rem;
+  border: 1px solid #ffc30033;
+}
+
+.box-title-separator {
+  color: var(--ico-yellow);
+  font-weight: 300;
+  font-size: 0.75rem;
+  letter-spacing: 0.35em;
+}
+
+.custom-icon {
+  border: 1px solid #ffc3004d;
+  background-color: #ffc3001a;
+  border-radius: 20px;
+  font-size: 1.875rem;
+  padding: 4px 9px;
+  margin-top: 10px;
+}
+
+.custom-sub-icon {
+  font-size: 1.5rem;
+}
+
+.info-box {
+  border: 1px solid #ffc30033;
+  padding: 24px 16px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.info-box:hover {
+  border: 1.5px solid #ffc30099;
+}
+
+.info-box-number {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--ico-yellow);
+}
+
+.btn-outline-light-custom {
+  color: var(--ico-text);
+  border: 2px solid var(--ico-yellow);
+  font-weight: 600;
+  padding: 0.7rem 1.8rem;
+  border-radius: 9999px;
+  background-color: transparent;
+}
+
+.btn-outline-light-custom:hover {
+  background-color: var(--ico-yellow);
+  color: var(--ico-dark);
+  border-color: var(--ico-yellow);
+}
+
+.btn-yellow-cta {
+  background-color: var(--ico-yellow);
+  color: var(--ico-dark);
+  font-weight: 600;
+  padding: 0.7rem 1.8rem;
+  border-radius: 9999px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-yellow-cta:hover {
+  background-color: #ffe867;
+  color: var(--ico-dark);
+}
+
+/* --- About/Partner Section (GIỚI THIỆU / ĐỐI TÁC FDI) --- */
+.partner-info-box {
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  height: 100%;
+  border: 1px solid #ffc30033;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.partner-info-box:hover {
+  border-color: var(--ico-yellow);
+}
+
+.partner-info-box .info-box-icon {
+  color: var(--ico-yellow);
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+/* --- Service Section (DỊCH VỤ) --- */
+.service-box {
+  background-color: var(--ico-box-dark);
+  padding: 2rem;
+  border-radius: 15px;
+  height: 100%;
+  transition: all 0.3s;
+  border: 1px solid #ffc30033;
+  cursor: pointer;
+}
+
+.service-box .animate-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover .animate-icon {
+  transform: translateX(5px);
+}
+
+.border-yellow {
+  border: 1px solid #ffc30066 !important;
+  max-width: fit-content;
+  padding: 10px 15px;
+  background-color: #ffc30026;
+  border-radius: 15px;
+}
+
+.service-box:hover {
+  border: 1px solid var(--ico-yellow);
+  box-shadow: 0 5px 25px var(--ico-yellow-secondary);
+}
+
+.service-box-title {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.service-box p {
+  font-size: 0.95rem;
+  color: var(--ico-gray);
+}
+
+.link-arrow {
+  color: var(--ico-yellow);
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.news-box .link-arrow {
+  margin: 0 !important;
+}
+
+.animate-icon {
+  margin-left: 7px !important;
+}
+
+/* --- Corporate Partner Section (ĐỐI TÁC FDI) --- */
+#doi-tac-fdi {
+  background-color: var(--ico-dark);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.partner-logo-box {
+  padding: 32px 24px !important;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  border: 1px solid #ffc30033;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px !important;
+  background-color: #4d483a1a;
+  cursor: pointer;
+}
+
+.partner-logo-box:hover {
+  background-color: #ffc30026;
+  color: var(--ico-yellow);
+}
+
+.partner-caption {
+  max-width: 595px;
+  margin: 0 auto 3rem;
+  color: #ffffffb3;
+}
+
+/* --- News Section (TIN TỨC) --- */
+.news-box {
+  padding: 2rem;
+  border-radius: 15px;
+  height: 100%;
+  border: 1px solid #ffc3001a;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  cursor: pointer;
+}
+
+.news-box i {
+  margin-left: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.news-box:hover i {
+  transform: translateX(5px);
+}
+
+.news-box:hover {
+  border-color: var(--ico-yellow);
+}
+
+.news-meta {
+  color: var(--ico-yellow);
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 !important;
+}
+
+.news-box:hover .news-title {
+  color: var(--ico-yellow);
+}
+
+.news-box p {
+  color: var(--ico-gray);
+  font-size: 0.9rem;
+  margin: 0 !important;
+}
+
+/* --- Contact Form Section (LIÊN HỆ) --- */
+#lien-he {
+  padding-bottom: 6rem;
+}
+
+.contact-form-area {
+  background-color: var(--ico-dark);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid #1a1a1a;
+  box-shadow: 0 0 10px 0 #00000099;
+}
+
+.form-group-custom {
+  margin-bottom: 1rem;
+}
+
+.form-group-custom label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-control-custom-light {
+  background-color: var(--ico-text) !important;
+  border: 1px solid #333;
+  color: var(--ico-text);
+  height: 50px;
+  border-radius: 0.75em;
+}
+
+.form-control-custom-light::placeholder {
+  color: #d6d1d1;
+  font-size: 14px;
+}
+
+.form-control-custom-light:focus {
+  border-color: var(--ico-yellow);
+  border: 2px solid var(--ico-yellow-secondary) !important;
+  box-shadow: none;
+}
+
+.form-control-custom,
+.form-select-custom {
+  background-color: var(--ico-box-dark);
+  border: 1px solid #333;
+  color: var(--ico-text);
+  height: 50px;
+  border-radius: 0.75em;
+}
+
+.form-control-custom::placeholder {
+  color: #666;
+  font-size: 14px;
+}
+
+.form-control-custom:focus,
+.form-select-custom:focus {
+  background-color: var(--ico-box-dark);
+  color: var(--ico-text);
+  border-color: var(--ico-yellow);
+  border: 2px solid var(--ico-yellow-secondary);
+  box-shadow: none;
+}
+
+.form-control-textarea {
+  min-height: 120px;
+  background-color: var(--ico-text) !important;
+  border-radius: 0.75em;
+}
+
+.form-control-textarea::placeholder {
+  color: #d6d1d1;
+  font-size: 14px;
+}
+
+/* --- CTA Footer (KẾU GỌI HÀNH ĐỘNG) --- */
+.cta-footer-section {
+  background-color: var(--ico-yellow);
+  padding: 4rem 0;
+  color: var(--ico-dark);
+}
+
+.cta-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.btn-dark-cta {
+  background-color: var(--ico-dark);
+  color: var(--ico-text);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  max-width: 200px;
+  text-transform: uppercase;
+  border: 1px solid var(--ico-dark);
+}
+
+.btn-dark-cta:hover {
+  border: 1px solid var(--ico-dark);
+  box-shadow: 0 1px 5px var(--ico-dark);
+}
+
+/* --- Footer --- */
+footer {
+  background-color: var(--ico-dark);
+  padding-top: 4rem;
+}
+
+.footer-logo-text {
+  color: var(--ico-text);
+  font-weight: 600;
+  font-size: 1.125rem !important;
+}
+
+.footer-logo-sub {
+  color: #ffc300cc;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+.footer-about,
+.footer-links a,
+.footer-links p {
+  color: var(--ico-gray);
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.footer-about:last-child {
+  margin-bottom: 2.5rem;
+}
+
+.footer-links h6 {
+  color: var(--ico-text);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer-copyright {
+  padding: 1.5rem 0;
+  border-top: 1px solid #1a1a1a;
+  color: #444;
+  font-size: 0.85rem;
+}
+
+/* --- Responsive Tinh chỉnh --- */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    position: static;
+  }
+
+  #trang-chu {
+    padding-top: 4rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-group-custom {
+    justify-content: center !important;
+  }
+
+  .hero-boxes-area {
+    margin-top: 3rem;
+  }
+
+  .partner-info-box,
+  .service-box,
+  .news-box,
+  .partner-logo-box {
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-footer-section .d-flex {
+    justify-content: center !important;
+  }
+
+  footer .col-lg-3 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .btn-yellow-cta {
+    width: 100%;
+  }
+
+  .btn-outline-light-custom {
+    width: 100%;
+  }
+  .custom-icon {
+    margin: 0 !important;
+  }
+}
+
+.btn-partner-custom {
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+.btn-partner-custom:hover {
+  background-color: var(--ico-dark);
+  color: var(--ico-yellow);
+  border-color: var(--ico-dark);
+}
+
+.btn-apply-custom {
+  border-radius: 9999px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid var(--ico-yellow);
+  color: var(--ico-yellow);
+}
+
+.btn-apply-custom:hover {
+  background-color: var(--ico-yellow);
+  color: var(--ico-dark);
+  border-color: var(--ico-yellow);
+}
