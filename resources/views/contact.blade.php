@@ -1,0 +1,170 @@
+@extends('layouts.blank')
+
+@section('title', 'Liên hệ')
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('assets/css/contact.css') }}" />
+@endpush
+
+@section('content')
+
+<header class="page-header">
+    <div class="container">
+        <h1>Liên hệ với ICOJOB</h1>
+        <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn 24/7</p>
+    </div>
+</header>
+
+<div class="main-content-wrapper">
+    <div class="container mx-auto">
+        <div class="row justify-content-between gx-5">
+            
+            <div class="col-lg-6">
+                
+                <div class="contact-card info-section">
+                    <h2>Công ty Cổ phần Cung ứng Nguồn Nhân lực ICO</h2>
+                    <p class="subtitle">Thành viên của Tập đoàn ICOGroup</p>
+                    
+                    <div class="info-group">
+                        <div class="info-item-row">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <strong>Trụ Sở</strong>
+                                <span>Tòa nhà ICOGroup, Phường Bắc Giang, Tỉnh Bắc Ninh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-group">
+                        <div class="info-item-row">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <strong>Văn phòng</strong>
+                                <span>VP1: Văn Cốc 2, Nênh, Bắc Ninh<br>
+                                VP2: Núi Bần Cở, Lẫm Làng, Bắc Ninh</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-group">
+                        <div class="info-item-row">
+                            <i class="bi bi-telephone"></i>
+                            <div>
+                                <strong>Hotline</strong>
+                                <span>+84 83 821 4222</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-group">
+                        <div class="info-item-row">
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>icojob2018@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-group" style="margin-bottom: 0;">
+                        <div class="info-item-row">
+                            <i class="bi bi-clock"></i>
+                            <div>
+                                <strong>Giờ làm việc</strong>
+                                <span>8:00 – 17:30 (Thứ 2 – Thứ 7)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-group" style="margin-bottom: 0;">
+                        <div class="info-item-row" style="padding-bottom: 0;">
+                            <i class="bi bi-globe"></i>
+                            <div>
+                                <strong>Website</strong>
+                                <span>www.icojob.vn</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="contact-card social-card">
+                    <h2>Kết nối với chúng tôi</h2>
+                    <div class="social-grid">
+                        <a href="#" class="social-btn facebook">
+                            <i class="bi bi-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-btn zalo">
+                            <i class="bi bi-chat"></i>
+                            <span>Zalo</span>
+                        </a>
+                        <a href="#" class="social-btn youtube">
+                            <i class="bi bi-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="#" class="social-btn tiktok">
+                            <i class="bi bi-tiktok"></i>
+                            <span>TikTok</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.717143977265!2d106.07722737525389!3d21.43944688029536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31351187d7f7e915%3A0x6e760c2394593414!2zQ8O0bmcgVHkgQ-G7lSBQaOG6p24gQ3VuZyDhu6ngbmcgTmd14buTbiBOaMOibiBM4buxYyBJQ08gKElDT0pPQik!5e0!3m2!1svi!2s!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="contact-card form-section">
+                    <h2>Gửi yêu cầu liên hệ</h2>
+                    <form id="contactForm">
+                        <div class="mb-3 form-group">
+                            <label for="name" class="form-label">Họ và tên <span class="required-star">*</span></label>
+                            <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên của bạn" required>
+                        </div>
+                        
+                        <div class="mb-3 form-group">
+                            <label for="phone" class="form-label">Số điện thoại <span class="required-star">*</span></label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
+                        </div>
+                        
+                        <div class="mb-3 form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                        </div>
+                        
+                        <div class="mb-3 form-group">
+                            <label for="subject" class="form-label">Chủ đề</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Nội dung liên hệ">
+                        </div>
+                        
+                        <div class="mb-4 form-group">
+                            <label for="message" class="form-label">Nội dung tin nhắn <span class="required-star">*</span></label>
+                            <textarea class="form-control " id="message" rows="5" placeholder="Mô tả chi tiết yêu cầu của bạn..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">GỬI NGAY</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="cta-footer">
+    <div class="container">
+        <h2>Bạn đang tìm kiếm giải pháp nhân lực cho doanh nghiệp?</h2>
+        <a href="#" class="btn btn-cta">LIÊN HỆ NGAY</a>
+    </div>
+</footer>
+
+@endsection
+
+@push('scripts')
+<script>
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Cảm ơn bạn đã liên hệ! Yêu cầu của bạn đã được gửi thành công.');
+        this.reset();
+    });
+</script>
+@endpush
