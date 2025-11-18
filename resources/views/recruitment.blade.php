@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Trang chủ')
+@section('title', 'Tuyển dụng')
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />

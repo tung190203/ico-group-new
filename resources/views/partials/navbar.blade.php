@@ -30,7 +30,7 @@
             <a class="nav-link" href="{{ route('home') }}">TRANG CHỦ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#gioi-thieu">GIỚI THIỆU</a>
+            <a class="nav-link" href="{{ route('introduction') }}">GIỚI THIỆU</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#dich-vu">DỊCH VỤ</a>

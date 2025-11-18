@@ -20,4 +20,9 @@ class HomeController extends Controller
     {
         return view('recruitment');
     }
+
+    public function introductionPage()
+    {
+        return view('introduction');
+    }
 }

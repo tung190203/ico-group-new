@@ -1,9 +1,10 @@
-@extends('layouts.blank')
+@extends('layouts.app')
 
 @section('title', 'Liên hệ')
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('assets/css/contact.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 @endpush
 
 @section('content')

@@ -4,6 +4,7 @@ html,
 body {
   font-family: "Roboto", sans-serif;
 }
+
 /* --- CSS TÙY CHỈNH ĐỂ ĐẠT ĐỘ GIỐNG 100% --- */
 :root {
   --ico-yellow: #ffc300;
@@ -620,6 +621,7 @@ footer {
   .btn-outline-light-custom {
     width: 100%;
   }
+
   .custom-icon {
     margin: 0 !important;
   }
@@ -670,18 +672,40 @@ footer {
 
 /* Hiệu ứng rung lắc nhẹ */
 @keyframes shake {
-  0% { transform: rotate(0deg); }
-  20% { transform: rotate(-15deg); }
-  40% { transform: rotate(15deg); }
-  60% { transform: rotate(-10deg); }
-  80% { transform: rotate(10deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  40% {
+    transform: rotate(15deg);
+  }
+
+  60% {
+    transform: rotate(-10deg);
+  }
+
+  80% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* Thủ thuật tạo “khoảng nghỉ” giữa các lần lắc */
 @keyframes pause {
-  from { transform: none; }
-  to { transform: none; }
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: none;
+  }
 }
 
 .fab-item {
@@ -744,4 +768,212 @@ footer {
 
 .hotline-number {
   font-size: 13px;
+}
+
+.line {
+  width: 35%;
+  height: 3px;
+  background-color: var(--ico-yellow);
+  top: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.introduce {
+  font-size: 60px;
+  font-weight: bold;
+  transition: font-size 0.3s ease;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .introduce {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+/* Thiết bị Mobile (dưới 768px) */
+@media (max-width: 767.98px) {
+  .introduce {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .line {
+    width: 60%;
+  }
+}
+
+.info-card {
+  box-shadow: 0px 2px 15px -5px gray;
+  border-radius: 10px;
+  border-left: 5px solid var(--ico-yellow);
+  font-size: 18px;
+  line-height: 1.75rem;
+  padding: 25px;
+}
+
+.item-card {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.light-box {
+  background-color: #fefce8;
+  border: 1px solid var(--ico-yellow-secondary);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card-zoom-container {
+  height: 552px;
+  width: 100%;
+  /* Đảm bảo ảnh không tràn ra khỏi khung */
+  overflow: hidden;
+  /* Tạo vị trí tương đối cho lớp phủ và nội dung */
+  position: relative;
+  /* Thiết lập bo góc và đổ bóng theo yêu cầu của Bootstrap card */
+  border-radius: 0.75rem !important;
+  /* Ví dụ: bo góc tròn */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  /* Đổ bóng nhẹ */
+}
+
+.card-img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-custom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Đảm bảo ảnh luôn che phủ container */
+  display: block;
+  /* Thiết lập chuyển động mượt mà */
+  transition: transform 0.5s ease;
+}
+
+/* Lớp phủ Gradient đen mờ */
+.card-img-overlay-custom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  /* Chiều cao của lớp phủ gradient */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  border-radius: 0 0 0.75rem 0.75rem;
+  /* Chỉ bo góc dưới */
+}
+
+/* Hiệu ứng zoom khi di chuột (Hover Effect) */
+.card-zoom-container:hover .card-img-custom {
+  transform: scale(1.05);
+  /* Phóng to 5% */
+}
+
+/* Cấu hình văn bản */
+.card-content-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  z-index: 10;
+  /* Đảm bảo chữ nằm trên lớp phủ */
+  color: white;
+}
+
+.card-title-custom {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.card-subtitle-custom {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.icon-item {
+  background-color: #fefce8;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-item svg {
+  stroke: #facc15;
+  transition: transform 0.5s ease-in-out;
+}
+
+.diffirent {
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s ease-in-out;
+}
+
+.diffirent h4 {
+  font-size: 20px;
+  margin-top: 20px;
+  transition: transform 0.3s ease-in-out;
+  padding-bottom: 30px
+}
+
+.diffirent:hover {
+  transform: translateY(-5px);
+  border: 1px solid var(--ico-yellow-secondary);
+  box-shadow: 0px 2px 15px -5px gray;
+}
+
+.diffirent:hover h4 {
+  color: #ca8a04;
+}
+
+.diffirent:hover svg {
+  stroke: var(--ico-dark);
+  transition: transform 0.3s ease-in-out;
+}
+
+.diffirent:hover .icon-item {
+  background-color: #facc15;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-line {
+  position: absolute;
+  bottom: 2;
+  left: 6%;
+  width: calc(100% - 48px);
+  height: 3px;
+  background-color: var(--ico-yellow);
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.diffirent:hover .custom-line {
+  transform: scaleX(1);
 }
