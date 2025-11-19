@@ -788,7 +788,7 @@ footer {
 .subtitle {
   font-size: 20px;
   margin-top: 40px;
-  width: 100%;
+  width: 60%;
 }
 
 @media (max-width: 991.98px) {
@@ -798,6 +798,7 @@ footer {
 
   .subtitle {
     font-size: 16px;
+    width: 80%;
   }
 }
 
@@ -809,6 +810,7 @@ footer {
 
   .subtitle {
     font-size: 14px;
+    width: 100%;
   }
 
   .line {
@@ -976,4 +978,109 @@ footer {
 
 .diffirent:hover .custom-line {
   transform: scaleX(1);
+}
+
+.service-title {
+  font-size: 36px;
+  color: #ffc300;
+  font-weight: bold;
+}
+
+.service-subtitle {
+  margin: 40px 0;
+  font-size: 18px;
+  color: #4b5563;
+}
+
+.benefit {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.list-benefit {
+  padding: 0;
+}
+
+.list-benefit li svg {
+  stroke: #ffc300;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.card-zoom-container-service {
+  height: 327px;
+  width: 100%;
+  /* Đảm bảo ảnh không tràn ra khỏi khung */
+  overflow: hidden;
+  /* Tạo vị trí tương đối cho lớp phủ và nội dung */
+  position: relative;
+  /* Thiết lập bo góc và đổ bóng theo yêu cầu của Bootstrap card */
+  border-radius: 0.75rem !important;
+  /* Ví dụ: bo góc tròn */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  /* Đổ bóng nhẹ */
+}
+
+.card-zoom-container-service-custom-height {
+  height: 740px;
+}
+
+.card-img-wrapper-service {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-custom-service {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Đảm bảo ảnh luôn che phủ container */
+  display: block;
+  /* Thiết lập chuyển động mượt mà */
+  transition: transform 0.5s ease;
+}
+
+.card-zoom-container-service:hover .card-img-custom-service {
+  transform: scale(1.05);
+  /* Phóng to 5% */
+}
+
+.cta-custom {
+  max-width: 56rem;
+  text-align: center;
+}
+
+.cta-custom h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cta-custom p {
+  max-width: 42rem;
+  font-size: 18px;
+  margin: 24px auto 40px auto;
+}
+
+.cta-custom button {
+padding: 16px 32px;
+font-size: 18px;
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+/* Thiết bị Mobile (dưới 768px) */
+@media (max-width: 767.98px) {
+.cta-custom h2 {
+  font-size: 32px;
+}
+.cta-custom p {
+  font-size: 16px;
+}
 }

@@ -25,4 +25,17 @@ class HomeController extends Controller
     {
         return view('introduction');
     }
+
+    public function servicePage() 
+    {
+        return view('service');
+    }
+    public function partnerPage() 
+    {
+        return view('partner');
+    }
+    public function postPage() 
+    {
+        return view('post');
+    }
 }

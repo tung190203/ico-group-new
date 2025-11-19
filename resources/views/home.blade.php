@@ -25,8 +25,8 @@
                         Nam, đồng hành cùng người lao động trên mọi chặng đường
                     </p>
                     <div class="btn-group-custom d-flex gap-3 flex-wrap">
-                        <a href="#dich-vu" class="btn btn-yellow-cta">Tìm hiểu ngay</a>
-                        <a href="#lien-he" class="btn btn-outline-light-custom">Đăng ký ứng tuyển</a>
+                        <a href="{{ route('service') }}" class="btn btn-yellow-cta">Tìm hiểu ngay</a>
+                        <a href="{{ route('contact') }}" class="btn btn-outline-light-custom">Đăng ký ứng tuyển</a>
                     </div>
                 </div>
 
@@ -168,7 +168,7 @@
                             Đáp ứng nhanh với đội ngũ lao động được đào tạo bài bản, kỷ
                             luật.
                         </p>
-                        <a href="#lien-he" class="link-arrow">Tìm hiểu chi tiết
+                        <a href="{{ route('contact') }}" class="link-arrow">Tìm hiểu chi tiết
                             <span class="animate-icon"><i class="fas fa-arrow-right"></i></span></a>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                             Kỹ sư, kỹ thuật viên tay nghề cao cho dây chuyền sản xuất hiện
                             đại.
                         </p>
-                        <a href="#lien-he" class="link-arrow">Tìm hiểu chi tiết
+                        <a href="{{ route('contact') }}" class="link-arrow">Tìm hiểu chi tiết
                             <span class="animate-icon"><i class="fas fa-arrow-right"></i></span></a>
                     </div>
                 </div>
@@ -198,7 +198,7 @@
                             Chương trình tiếng Trung thực chiến, lộ trình bài bản thực tế
                             với doanh nghiệp.
                         </p>
-                        <a href="#lien-he" class="link-arrow">Tìm hiểu chi tiết
+                        <a href="{{ route('contact') }}" class="link-arrow">Tìm hiểu chi tiết
                             <span class="animate-icon"><i class="fas fa-arrow-right"></i></span></a>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                             Chương trình đào tạo đa dạng các ngành nghề kỹ thuật trong
                             trường cao đẳng thuộc hệ thống ICOGROUP
                         </p>
-                        <a href="#lien-he" class="link-arrow">Tìm hiểu chi tiết
+                        <a href="{{ route('contact') }}" class="link-arrow">Tìm hiểu chi tiết
                             <span class="animate-icon"><i class="fas fa-arrow-right"></i></span></a>
                     </div>
                 </div>

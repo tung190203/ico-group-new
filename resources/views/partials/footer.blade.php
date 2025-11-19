@@ -51,8 +51,8 @@
             <h6 class="text-warning">Điều hướng</h6>
             <p><a href="{{ route('home') }}">Trang chủ</a></p>
             <p><a href="{{ route('introduction') }}">Giới thiệu</a></p>
-            <p><a href="#dich-vu">Dịch vụ</a></p>
-            <p><a href="#doi-tac-fdi">Đối tác FDI</a></p>
+            <p><a href="{{ route('service') }}">Dịch vụ</a></p>
+            <p><a href="{{ route('partner') }}">Đối tác FDI</a></p>
             <p><a href="#tin-tuc">Tin tức</a></p>
             <p><a href="{{ route('recruitment') }}">Tuyển dụng</a></p>
             <p><a href="{{ route('contact') }}">Liên hệ</a></p>

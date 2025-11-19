@@ -33,10 +33,10 @@
             <a class="nav-link" href="{{ route('introduction') }}">GIỚI THIỆU</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#dich-vu">DỊCH VỤ</a>
+            <a class="nav-link" href="{{ route('service') }}">DỊCH VỤ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#doi-tac-fdi">ĐỐI TÁC FDI</a>
+            <a class="nav-link" href="{{ route('partner') }}">ĐỐI TÁC FDI</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#tin-tuc">TIN TỨC</a>
