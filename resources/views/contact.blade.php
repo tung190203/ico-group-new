@@ -3,8 +3,8 @@
 @section('title', 'Liên hệ')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('sneat/assets/css/contact.css') }}" />
-    <link rel="stylesheet" href="{{ asset('sneat/assets/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/contact.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 @endpush
 
 @section('content')

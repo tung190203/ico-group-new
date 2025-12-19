@@ -3,7 +3,7 @@
 @section('title', 'Đối tác FDI')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('sneat/assets/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 @endpush
 
 @section('content')
