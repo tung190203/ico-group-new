@@ -89,19 +89,19 @@
                 <div class="contact-card social-card">
                     <h2>Kết nối với chúng tôi</h2>
                     <div class="social-grid">
-                        <a href="#" class="social-btn facebook">
+                        <a href="https://www.facebook.com/profile.php?id=61581086139050" class="social-btn facebook">
                             <i class="bi bi-facebook"></i>
                             <span>Facebook</span>
                         </a>
-                        <a href="#" class="social-btn zalo">
+                        <a href="https://zalo.me/838214222" class="social-btn zalo">
                             <i class="bi bi-chat"></i>
                             <span>Zalo</span>
                         </a>
-                        <a href="#" class="social-btn youtube">
+                        <a href="https://www.youtube.com/@icojob-kenhvieclam4560" class="social-btn youtube">
                             <i class="bi bi-youtube"></i>
                             <span>YouTube</span>
                         </a>
-                        <a href="#" class="social-btn tiktok">
+                        <a href="https://www.tiktok.com/@icojob_mkt" class="social-btn tiktok">
                             <i class="bi bi-tiktok"></i>
                             <span>TikTok</span>
                         </a>

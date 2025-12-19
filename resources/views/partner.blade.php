@@ -88,7 +88,7 @@
                 <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                     <a href="{{ route('post') }}">
                         <div class="partner-logo-box">
-                            <img src="assets/images/branding/foxconn.png" style="width: 100px" alt="" />
+                            <img src="assets/images/branding/foxconn.png" style="width: 150px" alt="" />
                         </div>
                     </a>
                 </div>
@@ -109,7 +109,7 @@
                 <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                     <a href="{{ route('post') }}">
                     <div class="partner-logo-box">
-                        <img src="assets/images/branding/luxshare.svg" style="width: 100px" alt="" />
+                        <img src="assets/images/branding/luxshare.svg" style="width: 160px" alt="" />
                     </div>
                     </a>
                 </div>

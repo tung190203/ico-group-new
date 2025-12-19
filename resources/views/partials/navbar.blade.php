@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
     <div class="container container-xxl">
-      <a class="navbar-brand d-flex align-items-center" href="#trang-chu">
+      <a class="navbar-brand d-flex align-items-center" href="{{ route('home') }}">
         <div class="d-flex flex-column lh-1">
           <img
             src="assets/images/logo.png"

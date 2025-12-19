@@ -17,15 +17,15 @@
                         BỘ KHUNG NHÂN LỰC CHO DOANH NGHIỆP FDI
                     </p>
                     <h1 class="hero-title text-white">
-                        Kết nối lao động Việt Nam với
-                        <span class="hero-subtitle">doanh nghiệp toàn cầu</span>
+                        Kết nối nguồn nhân lực với
+                        <span class="hero-subtitle">các doanh nghiệp FDI tại Việt Nam</span>
                     </h1>
                     <p class="hero-text">
                         ICOJob – Cầu nối nhân lực vững chắc cho doanh nghiệp FDI tại Việt
                         Nam, đồng hành cùng người lao động trên mọi chặng đường
                     </p>
                     <div class="btn-group-custom d-flex gap-3 flex-wrap">
-                        <a href="{{ route('service') }}" class="btn btn-yellow-cta">Tìm hiểu ngay</a>
+                        <a href="{{ route('introduction') }}" class="btn btn-yellow-cta">Tìm hiểu ngay</a>
                         <a href="{{ route('contact') }}" class="btn btn-outline-light-custom">Đăng ký ứng tuyển</a>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
             <div class="row align-items-start d-flex justify-content-evenly">
                 <div class="col-lg-6">
                     <h2 class="section-title" style="margin-bottom: 2.25rem; font-size: 2.2rem">
-                        ICOJob – Đối tác chiến lược của <br />
+                        ICOJob – Đối tác chiến lược với các <br />
                         doanh nghiệp FDI tại Việt Nam
                     </h2>
                     <p style="margin-bottom: 2rem; color: #fffc; font-size: 18px">
@@ -96,44 +96,8 @@
                         sẵn sàng phát triển dài hạn.
                     </p>
                 </div>
-
                 <div class="col-lg-5">
-                    <div class="row">
-                        <div class="col-md-4 mb-3">
-                            <div class="partner-info-box text-center">
-                                <div class="info-box-icon">🏭</div>
-                                <div class="info-box-number">
-                                    30+ Doanh nghiệp đối tác FDI
-                                </div>
-                                <p class="small mt-2" style="font-size: 0.875rem; color: #ffffffb3">
-                                    Trải khắp các khu công nghiệp trọng điểm tại khu vực Bắc
-                                    Ninh, Thái Nguyên, Hà Nội.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <div class="partner-info-box text-center">
-                                <div class="info-box-icon">👷‍♂️</div>
-                                <div class="info-box-number">
-                                    40.000+ Lao động được cung ứng
-                                </div>
-                                <p class="small mt-2" style="font-size: 0.875rem; color: #ffffffb3">
-                                    Đội ngũ nhân lực chất lượng, lành nghề, tỉ mỉ, cẩn thận.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <div class="partner-info-box text-center">
-                                <div class="info-box-icon">🎯</div>
-                                <div class="info-box-number">
-                                    17 năm kinh nghiệm thực chiến
-                                </div>
-                                <p class="small mt-2" style="font-size: 0.875rem; color: #ffffffb3">
-                                    Đồng hành cùng các tập đoàn toàn cầu trong suốt 17 năm.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HFuoKF6QlYc?si=-cgX7i25aJIt628L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -224,7 +188,7 @@
     <section id="doi-tac-fdi" class="section-padding">
         <div class="container container-xxl">
             <p class="section-title-manual">ĐỐI TÁC FDI TIÊU BIỂU</p>
-            <h2 class="section-title">Niềm tin từ những doanh nghiệp hàng đầu</h2>
+            <h2 class="section-title">Niềm tin từ doanh nghiệp</h2>
             <p class="partner-caption">
                 Chúng tôi tự hào là đối tác chiến lược của các tập đoàn đa quốc gia,
                 mang lại nguồn nhân lực chất lượng và ổn định.
@@ -233,7 +197,7 @@
             <div class="row justify-content-center">
                 <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                     <div class="partner-logo-box">
-                        <img src="assets/images/branding/foxconn.png" style="width: 100px" alt="" />
+                        <img src="assets/images/branding/foxconn.png" style="width: 150px" alt="" />
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-3">
@@ -248,7 +212,7 @@
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                     <div class="partner-logo-box">
-                        <img src="assets/images/branding/luxshare.svg" style="width: 100px" alt="" />
+                        <img src="assets/images/branding/luxshare.svg" style="width: 160px" alt="" />
                     </div>
                 </div>
 
@@ -349,12 +313,8 @@
             <div class="text-center mb-5">
                 <p class="section-title-manual text-black">BIỂU MẪU ĐĂNG KÝ</p>
                 <h2 class="section-title mb-3" style="font-size: 2.2rem; color: #080808">
-                    Kết nối cùng ICOJob ngay hôm nay
+                    Hãy kết nối cùng ICOJob ngay hôm nay
                 </h2>
-                <p style="color: #000000b3; max-width: 600px; margin: 0 auto">
-                    Lựa chọn biểu mẫu phù hợp để chúng tôi hỗ trợ nhanh chóng và hiệu
-                    quả.
-                </p>
             </div>
 
             <div class="row">
@@ -493,92 +453,17 @@
 
     <section class="cta-footer-section">
         <div class="container container-xxl">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-9">
-                    <p class="section-title-manual text-dark" style="font-size: 12px">
-                        KÊU GỌI HÀNH ĐỘNG
-                    </p>
-                    <h2 class="cta-title">
-                        Bạn đang cần nhân sự chất lượng? Liên hệ với ICOJob ngay hôm nay!
-                    </h2>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-12 text-center mb-2 mb-md-0 d-flex gap-3 justify-content-center">
+                    <span class="custom-text-footer text-white">ĐỒNG HÀNH</span>
+                    <span class="custom-text-footer">TRỌN VẸN</span>
                 </div>
-                <div class="col-lg-3 d-flex justify-content-lg-end">
-                    <a href="#lien-he" class="btn btn-dark-cta d-flex align-items-center">
-                        Gửi yêu cầu hợp tác
-                        <i class="fas fa-arrow-right ms-2"></i>
-                    </a>
+                <div class="col-md-12 d-flex gap-2 justify-content-center">
+                    <span class="custom-text-footer text-white mt-2">ĐỒNG HÀNH</span>
+                    <img src="assets/images/logo-white.png" alt="" class="sub-footer-logo" />
                 </div>
             </div>
         </div>
     </section>
 
 @endsection
-
-@push('scripts')
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-            anchor.addEventListener("click", function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute("href")).scrollIntoView({
-                    behavior: "smooth",
-                });
-            });
-        });
-
-        // Bootstrap tooltip khởi tạo
-        const tooltipTriggerList = document.querySelectorAll(
-            '[data-bs-toggle="tooltip"]'
-        );
-        const tooltipList = [...tooltipTriggerList].map(
-            (el) => new bootstrap.Tooltip(el)
-        );
-
-        const callBtn = document.getElementById("call-btn");
-        const messageBtn = document.getElementById("message-btn");
-        const hotlineList = document.getElementById("hotline-list");
-        const messageList = document.getElementById("message-list");
-
-        // Toggle nút gọi
-        callBtn.addEventListener("click", function(e) {
-            e.stopPropagation();
-
-            // Ẩn message list nếu đang mở
-            messageList.style.display = "none";
-
-            // Toggle hotline list
-            hotlineList.style.display =
-                hotlineList.style.display === "block" ? "none" : "block";
-        });
-
-        // Toggle nút tin nhắn
-        messageBtn.addEventListener("click", function(e) {
-            e.stopPropagation();
-
-            // Ẩn hotline list nếu đang mở
-            hotlineList.style.display = "none";
-
-            // Toggle message list
-            messageList.style.display =
-                messageList.style.display === "block" ? "none" : "block";
-        });
-
-        // Ẩn cả hai khi click ra ngoài
-        document.addEventListener("click", function(e) {
-            if (!callBtn.contains(e.target)) {
-                hotlineList.style.display = "none";
-            }
-            if (!messageBtn.contains(e.target)) {
-                messageList.style.display = "none";
-            }
-        });
-
-        // Scroll lên đầu trang
-        const scrollTopBtn = document.getElementById("scroll-top");
-        scrollTopBtn.addEventListener("click", () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-    </script>
-@endpush
