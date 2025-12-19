@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,7 @@ Route::get('/introduction', [HomeController::class, 'introductionPage'])->name('
 Route::get('/service', [HomeController::class, 'servicePage'])->name('service');
 Route::get('/partner', [HomeController::class, 'partnerPage'])->name('partner');
 Route::get('/post', [HomeController::class, 'postPage'])->name('post');
+
+Route::prefix('admin')->group(function () {
+    Route::get('/', [AdminController::class, 'adminDashboard'])->name('admin.dashboard');
+});
