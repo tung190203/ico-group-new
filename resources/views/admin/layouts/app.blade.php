@@ -22,6 +22,12 @@
     <script src="{{ asset('sneat/assets/vendor/js/helpers.js') }}"></script>
     <script src="{{ asset('sneat/assets/js/config.js') }}"></script>
     @stack('css')
+    <style>
+        .ck-editor__editable {
+        min-height: 300px;
+        max-height: 80vh;
+    }
+    </style>
 </head>
 
 <body>
@@ -57,7 +63,26 @@
     <script src="{{ asset('sneat/assets/js/main.js') }}"></script>
     <script src="{{ asset('sneat/assets/js/dashboards-analytics.js') }}"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+    <script src="/vendor/laravel-filemanager/js/stand-alone-button.js"></script>
     @stack('js')
 </body>
 
 </html>
+
+<script>
+    ClassicEditor
+        .create(document.querySelector('#editor'), {
+            ckfinder: {
+                uploadUrl: '/laravel-filemanager/upload?type=Images&_token={{ csrf_token() }}'
+            },
+            toolbar: [
+                'heading', '|',
+                'bold', 'italic', 'underline', '|',
+                'link', 'bulletedList', 'numberedList', '|',
+                'imageUpload', 'blockQuote', 'insertTable', '|',
+                'undo', 'redo'
+            ],
+        })
+        .catch(error => console.error(error));
+</script>

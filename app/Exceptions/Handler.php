@@ -27,4 +27,19 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    public function render($request, Throwable $exception)
+    {
+        if ($this->isHttpException($exception)) {
+            $statusCode = $exception->getStatusCode();
+
+            if ($statusCode == 404) {
+                if ($request->is('admin/*')) {
+                    return redirect()->route('admin.not-found');
+                }
+            }
+        }
+
+        return parent::render($request, $exception);
+    }
 }
