@@ -3,7 +3,9 @@
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\PartnerController;
+use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use UniSharp\LaravelFilemanager\Lfm;
@@ -27,7 +29,7 @@ Route::get('/recruitment', [HomeController::class, 'recruitmentPage'])->name('re
 Route::get('/introduction', [HomeController::class, 'introductionPage'])->name('introduction');
 Route::get('/service', [HomeController::class, 'servicePage'])->name('service');
 Route::get('/partner', [HomeController::class, 'partnerPage'])->name('partner');
-Route::get('/post', [HomeController::class, 'postPage'])->name('post');
+Route::get('/post/{slug?}', [HomeController::class, 'postPage'])->name('post');
 
 Route::prefix('admin')->group(function () {
 
@@ -61,6 +63,19 @@ Route::prefix('admin')->group(function () {
             Route::get('/{id}/edit', [PartnerController::class, 'edit'])->name('edit');
             Route::put('/{id}', [PartnerController::class, 'update'])->name('update');
             Route::delete('/{id}', [PartnerController::class, 'destroy'])->name('destroy');
+        });
+        Route::prefix('post')->name('admin.post.')->group(function (){
+            Route::get('/', [PostController::class, 'index'])->name('index');
+            Route::get('/create', [PostController::class, 'create'])->name('create');
+            Route::post('/', [PostController::class, 'store'])->name('store');
+            Route::get('/{id}/edit', [PostController::class, 'edit'])->name('edit');
+            Route::put('/{id}', [PostController::class, 'update'])->name('update');
+            Route::delete('/{id}', [PostController::class, 'destroy'])->name('destroy');
+        });
+        Route::prefix('menu')->name('admin.menu.')->group(function (){
+            Route::get('/', [MenuController::class, 'index'])->name('index');
+            Route::get('/{id}/edit', [MenuController::class, 'edit'])->name('edit');
+            Route::put('/{id}', [MenuController::class, 'update'])->name('update');
         });
     });
 });

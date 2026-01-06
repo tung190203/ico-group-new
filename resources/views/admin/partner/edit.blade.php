@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title', 'Cập nhật danh mục')
+@section('title', 'Cập nhật đối tác')
 
 @section('content')
 <div class="row mb-6 gy-6">

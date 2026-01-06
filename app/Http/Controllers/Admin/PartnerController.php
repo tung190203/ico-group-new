@@ -95,18 +95,18 @@ class PartnerController extends Controller
 
     public function destroy($id)
     {
-        $category = Partner::find($id);
+        $partner = Partner::find($id);
 
-        if (!$category) {
+        if (!$partner) {
             return redirect()
                 ->route('admin.partner.index')
-                ->with('error', 'Danh mục không tồn tại');
+                ->with('error', 'Đối tác không tồn tại');
         }
 
-        $category->delete();
+        $partner->delete();
 
         return redirect()
             ->route('admin.partner.index')
-            ->with('success', 'Xóa danh mục thành công');
+            ->with('success', 'Xóa đối tác thành công');
     }
 }

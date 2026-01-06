@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Partner;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function homePage()
     {
-        return view('home');
+        $solutions = Post::where('category_id', Post::SOLUTION)->where('status', Post::STATUS_PUBLISHED)->get();
+        $parners = Partner::where('is_active', 1)->orderBy('sort_order', 'asc')->get();
+        return view('home', compact('solutions', 'parners'));
     }
 
     public function contactPage()
@@ -34,8 +38,11 @@ class HomeController extends Controller
     {
         return view('partner');
     }
-    public function postPage() 
+    public function postPage($slug) 
     {
-        return view('post');
+        $post = Post::withFullRelations()->where('slug', $slug)->firstOrFail();
+        $post->increment('view_count');
+        
+        return view('post', compact('post'));
     }
 }

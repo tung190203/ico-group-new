@@ -21,13 +21,25 @@
         <li class="menu-item {{ request()->routeIs('admin.category*') ? 'active open' : '' }}">
             <a href="{{ route('admin.category.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-category"></i>
-                <div class="text-truncate">Danh mục</div>
+                <div class="text-truncate">Quản lý danh mục</div>
             </a>
         </li>        
         <li class="menu-item {{ request()->routeIs('admin.partner*') ? 'active open' : '' }}">
             <a href="{{ route('admin.partner.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-user-plus"></i>
-                <div class="text-truncate">Đối tác</div>
+                <div class="text-truncate">Quản lý đối tác</div>
+            </a>
+        </li> 
+        <li class="menu-item {{ request()->routeIs('admin.post*') ? 'active open' : '' }}">
+            <a href="{{ route('admin.post.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-news"></i>
+                <div class="text-truncate">Quản lý bài viết</div>
+            </a>
+        </li>  
+        <li class="menu-item {{ request()->routeIs('admin.menu*') ? 'active open' : '' }}">
+            <a href="{{ route('admin.menu.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-menu"></i>
+                <div class="text-truncate">Quản lý menu</div>
             </a>
         </li>        
     </ul>

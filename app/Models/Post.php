@@ -18,8 +18,11 @@ class Post extends Model
         'description',
         'content',
         'create_by',
-        'view_count'
+        'view_count',
+        'tags'
     ];
+
+    const SOLUTION = 2;
 
     const STATUS_DRAFT = 'draft';
     const STATUS_PUBLISHED = 'published';
@@ -31,8 +34,21 @@ class Post extends Model
         self::STATUS_ARCHIVED
     ];
 
+    protected $casts = [
+        'tags' => 'array',
+    ];
+
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function author()
+    {
+        return $this->belongsTo(User::class, 'created_by');
+    }
+
+    public static function scopeWithFullRelations($query){
+        return $query->with('category', 'author');
     }
 }

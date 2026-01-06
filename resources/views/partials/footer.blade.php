@@ -4,7 +4,7 @@
             <div class="col-lg-5 col-md-12" style="font-size: 14px">
                 <a href="{{ route('home') }}" class="d-flex align-items-center mb-3 text-decoration-none">
                     <div class="d-flex flex-column lh-1">
-                        <img src="assets/images/logo.png" alt="ICOJob Logo" class="mb-2" style="height: 70px" />
+                        <img src="{{ asset('assets/images/logo.png') }}" alt="ICOJob Logo" class="mb-2" style="height: 70px" />
                         <span class="footer-logo-sub mt-2 uppercase" style="font-size: 12px !important">Đồng hành trọn vẹn</span>
                     </div>
                 </a>

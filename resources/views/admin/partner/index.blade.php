@@ -1,6 +1,15 @@
 @extends('admin.layouts.app')
 
-@section('title', 'Quản lý danh mục')
+@section('title', 'Quản lý đối tác')
+@push('css')
+    <style>
+        .partner-logo {
+            width: 100px;
+            height: 60px;
+            object-fit: contain;
+        }
+    </style>
+@endpush
 
 @section('content')
     <h3 class="mb-4">Quản lý đối tác</h3>
@@ -35,7 +44,7 @@
                             <td>{{ $partners->firstItem() + $index }}</td>
                             <td>{{ $partner->name }}</td>
                             <td>
-                            <img src="{{ asset('storage/' . $partner->logo) }}" alt="" class="rounded" height="80">
+                            <img src="{{ asset('storage/' . $partner->logo) }}" alt="" class="partner-logo">
                             </td>
                             <td>
                                 <div class="d-flex flex-column gap-1 small">
