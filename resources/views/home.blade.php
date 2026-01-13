@@ -174,12 +174,14 @@
             @endphp
 
             <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                <div class="partner-logo-box">
-                    <img
-                        src="{{ asset('storage/' . $p->logo) }}"
-                        style="width: {{ $width }}px"
-                        alt="" />
-                </div>
+                <a href="{{ route('partner-detail', ['slug' => $p->slug]) }}">
+                    <div class="partner-logo-box">
+                        <img
+                            src="{{ asset('storage/' . $p->logo) }}"
+                            style="width: {{ $width }}px"
+                            alt="" />
+                    </div>
+                </a>
             </div>
             @endforeach
 

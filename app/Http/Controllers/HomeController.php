@@ -36,7 +36,14 @@ class HomeController extends Controller
     }
     public function partnerPage() 
     {
-        return view('partner');
+        $parners = Partner::where('is_active', 1)->orderBy('sort_order', 'asc')->get();
+        return view('partner', compact('parners'));
+    }
+
+    public function partnerDetail($slug) {
+        $partners = Partner::where('slug', $slug)->firstOrFail();
+
+        return view('partner-detail', compact('partners'));
     }
     public function postPage($slug) 
     {

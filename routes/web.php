@@ -30,6 +30,7 @@ Route::get('/introduction', [HomeController::class, 'introductionPage'])->name('
 Route::get('/service', [HomeController::class, 'servicePage'])->name('service');
 Route::get('/partner', [HomeController::class, 'partnerPage'])->name('partner');
 Route::get('/post/{slug?}', [HomeController::class, 'postPage'])->name('post');
+Route::get('/partner-detail/{slug?}', [HomeController::class,'partnerDetail'])->name('partner-detail');
 
 Route::prefix('admin')->group(function () {
 
