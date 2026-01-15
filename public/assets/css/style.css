@@ -452,6 +452,14 @@ body {
   font-size: 14px;
 }
 
+.form-select-custom-light {
+  background-color: var(--ico-text);
+  border: 1px solid #dddddd;
+  color: var(--ico-box-dark);
+  height: 50px;
+  border-radius: 0.75em;
+}
+
 .form-control-custom:focus,
 .form-select-custom:focus {
   background-color: var(--ico-box-dark);

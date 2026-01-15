@@ -331,124 +331,133 @@
               border: 1px solid var(--ico-yellow);
             ">
                     <div class="d-flex align-items-center mb-4">
-                        <div class="text-warning me-3">
-                            <i class="fas fa-lightbulb fa-2x"></i>
-                        </div>
                         <div>
                             <h4 class="text-dark fw-bold mb-0">
-                                Đăng ký hợp tác cùng ICOJob
+                                Đăng ký đi làm ngay
                             </h4>
-                            <p class="text-secondary mb-0" style="font-size: 0.875rem; color: #ffffffb3">
-                                Dành cho các doanh nghiệp FDI có nhu cầu tuyển dụng hoặc hợp
-                                tác cung ứng nhân lực.
-                            </p>
                         </div>
                     </div>
 
                     <form>
-                        <div class="form-group-custom">
-                            <label for="companyName" class="text-dark mb-2">Tên doanh nghiệp</label>
-                            <input type="text" class="form-control form-control-custom-light" id="companyName"
-                                placeholder="Nhập tên doanh nghiệp"
-                                style="background-color: #f0f0f0; border-color: #ddd" />
-                        </div>
                         <div class="row">
                             <div class="col-md-6 form-group-custom">
-                                <label for="contactPerson" class="text-dark mb-2">Họ tên người liên hệ</label>
+                                <label for="name" class="text-dark mb-2">Họ và tên</label>
                                 <input type="text" class="form-control form-control-custom-light"
-                                    id="contactPerson" placeholder="Ví dụ: Nguyễn Văn A"
+                                    id="name" placeholder="Ví dụ: Nguyễn Văn A"
                                     style="background-color: #f0f0f0; border-color: #ddd" />
                             </div>
                             <div class="col-md-6 form-group-custom">
-                                <label for="contactEmail" class="text-dark mb-2">Email / Số điện thoại</label>
-                                <input type="email" class="form-control form-control-custom-light"
-                                    id="contactEmail" placeholder="example@icojob.vn"
-                                    style="background-color: #f0f0f0; border-color: #ddd" />
+                                <label for="birth" class="text-dark mb-2">Ngày sinh</label>
+                                <input type="date" id="birth" class="form-control form-control-custom-light"
+                                    style="background-color: #f0f0f0; border-color: #ddd; color: #000000;" />
                             </div>
-                        </div>
-                        <div class="form-group-custom">
-                            <label for="recruitmentVolume" class="text-dark mb-2">Vị trí / Số lượng cần tuyển</label>
-                            <input type="text" class="form-control form-control-custom-light"
-                                id="recruitmentVolume" placeholder="Ví dụ: 200 công nhân, 50 kỹ thuật viên"
-                                style="background-color: #f0f0f0; border-color: #ddd" />
-                        </div>
-                        <div class="form-group-custom">
-                            <label for="specificRequirement" class="text-dark mb-2">Ghi chú hoặc yêu cầu cụ
-                                thể</label>
-                            <textarea class="form-control form-control-textarea" id="specificRequirement" rows="3"
-                                placeholder="Chia sẻ thêm về yêu cầu hoặc chi tiết chọn lọc"
-                                style="background-color: #f0f0f0; border-color: #ddd"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-warning w-100 py-3 mt-3 btn-partner-custom">
-                            Gửi yêu cầu hợp tác
-                        </button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="col-lg-6 mb-4">
-                <div class="contact-form-area h-100" style="background-color: var(--ico-box-dark) !important">
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="text-warning me-3">
-                            <i class="fas fa-user-tie fa-2x"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-white fw-bold mb-0">
-                                Đăng ký ứng tuyển ngay
-                            </h4>
-                            <p class="text-secondary mb-0" style="font-size: 0.875rem; color: #ffffffb3">
-                                Dành cho người lao động phổ thông hoặc kỹ thuật muốn tìm
-                                việc tại doanh nghiệp FDI.
-                            </p>
-                        </div>
-                    </div>
-
-                    <form>
-                        <div class="form-group-custom">
-                            <label for="applicantName" class="text-white mb-2">Họ và tên</label>
-                            <input type="text" class="form-control form-control-custom" id="applicantName"
-                                placeholder="Nhập Họ và tên" />
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-group-custom">
-                                <label for="birthYear" class="text-white mb-2">Năm sinh</label>
-                                <input type="number" class="form-control form-control-custom" id="birthYear"
-                                    placeholder="1998" />
-                            </div>
-                            <div class="col-md-6 form-group-custom">
-                                <label for="gender" class="text-white mb-2">Giới tính</label>
-                                <select class="form-select form-select-custom" id="gender">
+                                <label for="gender" class="text-dark mb-2">Giới tính</label>
+                                <select class="form-select form-select-custom-light" id="gender">
                                     <option selected>Nam</option>
                                     <option>Nữ</option>
                                     <option>Khác</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="form-group-custom">
-                            <label for="applicantPhone" class="text-white mb-2">Số điện thoại</label>
-                            <input type="tel" class="form-control form-control-custom" id="applicantPhone"
-                                placeholder="Nhập số điện thoại" />
+                            <div class="col-md-6 form-group-custom">
+                                <label for="phone" class="text-dark mb-2">Số điện thoại (Bắt buộc)</label>
+                                <input type="text" id="phone" class="form-control form-control-custom-light" placeholder="0123456789"
+                                    style="background-color: #f0f0f0; border-color: #ddd; color: #000000;" />
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-group-custom">
-                                <label for="educationLevel" class="text-white mb-2">Trình độ học vấn / Tay
-                                    nghề</label>
-                                <input type="text" class="form-control form-control-custom" id="educationLevel"
-                                    placeholder="Trung cấp / Kỹ thuật viên" />
+                                <label for="level" class="text-dark mb-2">Trình độ</label>
+                                <select class="form-select form-select-custom-light" id="level">
+                                    <option selected>Cấp 3</option>
+                                    <option>Cao đẳng</option>
+                                    <option>Đại học</option>
+                                </select>
                             </div>
                             <div class="col-md-6 form-group-custom">
-                                <label for="workArea" class="text-white mb-2">Khu vực muốn làm việc</label>
-                                <select class="form-select form-select-custom" id="workArea">
-                                    <option selected>Bắc Ninh</option>
-                                    <option>Hải Phòng</option>
-                                    <option>Quảng Ninh</option>
-                                    <option>Hà Nội</option>
-                                    <option>TP.HCM</option>
+                                <label for="company" class="text-dark mb-2">Công ty</label>
+                                <select class="form-select form-select-custom-light" id="company">
+                                    @foreach ($parners as $p)
+                                    <option value="{{ $p->id }}">{{ $p->name }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-warning w-100 py-3 mt-3 btn-apply-custom">
-                            Nộp thông tin ứng tuyển
+                        <div class="form-group-custom">
+                            <label for="specificRequirement" class="text-dark mb-2">Địa chỉ</label>
+                            <textarea class="form-control form-control-textarea" id="specificRequirement" rows="2"
+                                placeholder="Nhập địa chỉ"
+                                style="background-color: #f0f0f0; border-color: #ddd"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100 py-3 mt-3 btn-partner-custom">
+                            Gửi yêu cầu
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="contact-form-area h-100 bg-light"
+                    style="
+              background-color: white !important;
+              border: 1px solid var(--ico-yellow);
+            ">
+                    <div class="d-flex align-items-center mb-4">
+                        <div>
+                            <h4 class="text-dark fw-bold mb-0">
+                                Đăng ký đi học ngay
+                            </h4>
+                        </div>
+                    </div>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 form-group-custom">
+                                <label for="name" class="text-dark mb-2">Họ và tên</label>
+                                <input type="text" class="form-control form-control-custom-light"
+                                    id="name" placeholder="Ví dụ: Nguyễn Văn A"
+                                    style="background-color: #f0f0f0; border-color: #ddd" />
+                            </div>
+                            <div class="col-md-6 form-group-custom">
+                                <label for="birth" class="text-dark mb-2">Ngày sinh</label>
+                                <input type="date" id="birth" class="form-control form-control-custom-light"
+                                    style="background-color: #f0f0f0; border-color: #ddd; color: #000000;" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group-custom">
+                                <label for="gender" class="text-dark mb-2">Giới tính</label>
+                                <select class="form-select form-select-custom-light" id="gender">
+                                    <option selected>Nam</option>
+                                    <option>Nữ</option>
+                                    <option>Khác</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 form-group-custom">
+                                <label for="phone" class="text-dark mb-2">Số điện thoại (Bắt buộc)</label>
+                                <input type="text" id="phone" class="form-control form-control-custom-light" placeholder="0123456789"
+                                    style="background-color: #f0f0f0; border-color: #ddd; color: #000000;" />
+                            </div>
+                        </div>
+                        <div class="form-group-custom">
+                            <label for="specificRequirement" class="text-dark mb-2">Địa chỉ</label>
+                            <textarea class="form-control form-control-textarea" id="specificRequirement" rows="2"
+                                placeholder="Nhập địa chỉ"
+                                style="background-color: #f0f0f0; border-color: #ddd"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group-custom">
+                                <label for="gender" class="text-dark mb-2">Khoá Học</label>
+                                <select class="form-select form-select-custom-light" id="gender">
+                                    @foreach ($courses as $c)
+                                    <option value="{{ $c->id }}">{{ $c->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100 py-3 mt-3 btn-partner-custom">
+                            Gửi yêu cầu
                         </button>
                     </form>
                 </div>

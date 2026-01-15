@@ -3,9 +3,11 @@
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\PartnerController;
 use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use UniSharp\LaravelFilemanager\Lfm;
@@ -77,6 +79,22 @@ Route::prefix('admin')->group(function () {
             Route::get('/', [MenuController::class, 'index'])->name('index');
             Route::get('/{id}/edit', [MenuController::class, 'edit'])->name('edit');
             Route::put('/{id}', [MenuController::class, 'update'])->name('update');
+        });
+        Route::prefix('course')->name('admin.course.')->group(function (){
+            Route::get('/', [CourseController::class, 'index'])->name('index');
+            Route::get('/create', [CourseController::class, 'create'])->name('create');
+            Route::post('/', [CourseController::class, 'store'])->name('store');
+            Route::get('/{id}/edit', [CourseController::class, 'edit'])->name('edit');
+            Route::put('/{id}', [CourseController::class, 'update'])->name('update');
+            Route::delete('/{id}', [CourseController::class, 'destroy'])->name('destroy');
+        });
+        Route::prefix('user')->name('admin.user.')->group(function (){
+            Route::get('/', [UserController::class, 'index'])->name('index');
+            Route::get('/create', [UserController::class, 'create'])->name('create');
+            Route::post('/', [UserController::class, 'store'])->name('store');
+            Route::get('/{id}/edit', [UserController::class, 'edit'])->name('edit');
+            Route::put('/{id}', [UserController::class, 'update'])->name('update');
+            Route::delete('/{id}', [UserController::class, 'destroy'])->name('destroy');
         });
     });
 });

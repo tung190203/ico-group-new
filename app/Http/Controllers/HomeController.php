@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use App\Models\Partner;
 use App\Models\Post;
 use Illuminate\Http\Request;
@@ -49,7 +50,9 @@ class HomeController extends Controller
     {
         $post = Post::withFullRelations()->where('slug', $slug)->firstOrFail();
         $post->increment('view_count');
+        $parners = Partner::where('is_active', 1)->orderBy('sort_order', 'asc')->get();
+        $courses = Course::where('is_active', 1)->orderBy('sort_order', 'asc')->get();
         
-        return view('post', compact('post'));
+        return view('post', compact('post', 'parners','courses'));
     }
 }

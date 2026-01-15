@@ -88,7 +88,7 @@
           </div>
           <div class="form-check form-switch form-check-reverse d-flex justify-content-start align-items-center gap-4 mb-6">
             <label class="form-check-label" for="flexSwitchCheckDefault">Hiển thị đối tác</label>
-            <input class="form-check-input" type="checkbox" name="is_active" id="flexSwitchCheckDefault" style="width:50px;height:30px" />
+            <input class="form-check-input" type="checkbox" name="is_active" value="1" id="flexSwitchCheckDefault" style="width:50px;height:30px" />
           </div>
           <div class="mb-6">
             <label class="form-label">Thiết lập thứ tự hiển thị</label>
